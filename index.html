@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новости</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Новости дня</h1>
+  <div id="current-time"></div> <!-- Время на сайте -->
+</header>
+
+<main>
+  <div class="categories">
+    <h2>Категории</h2>
+    <ul id="category-list">
+      <li><button class="category" onclick="filterNews('technology')">Технологии</button></li>
+      <li><button class="category" onclick="filterNews('sports')">Спорт</button></li>
+      <li><button class="category" onclick="filterNews('politics')">Политика</button></li>
+      <li><button class="category" onclick="filterNews('entertainment')">Развлечения</button></li>
+      <li><button class="category" onclick="filterNews('health')">Здоровье</button></li>
+    </ul>
+  </div>
+
+  <div class="news-container" id="news-container">
+    <!-- Здесь будут отображаться новости по выбранной категории -->
+  </div>
+
+  <button class="load-more" onclick="loadMoreNews()">Загрузить больше</button>
+</main>
+
+<footer>
+  <p>&copy; 2025 Все права защищены</p>
+  <div id="current-time"></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+<div class="language-switcher">
+    <button onclick="setLanguage('ru')">Русский</button>
+    <button onclick="setLanguage('en')">English</button>
+  </div>
+  <div class="comments-section">
+    <h3>Комментарии:</h3>
+    <textarea id="comment-input" placeholder="Оставьте ваш комментарий..."></textarea>
+    <button onclick="addComment()">Отправить</button>
+    <div id="comments-list"></div>
+  </div>
+  <div class="news-container" id="news-container"></div>
+  <div class="news-card">
+    <h2>Заголовок новости</h2>
+    <p>Текст новости...</p>
+    <button class="like-btn" onclick="likeNews()">👍</button>
+    <button class="dislike-btn" onclick="dislikeNews()">👎</button>
+  </div>
+  <div class="trending-news">
+    <h2>Популярные новости</h2>
+    <div id="trending-news-container"></div>
+  </div>
+  <div class="social-share">
+    <button onclick="shareOnFacebook()">Поделиться на Facebook</https://www.instagram.com/royal_rent_car_dubai?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==>
+    <button onclick="shareOnTwitter()">Поделиться в Twitter</button>
+    <button onclick="shareOnTelegram()">Поделиться в Telegram</button>
+  </div>
+  <button onclick="toggleTheme()">Переключить тему</button>
+  <div id="calendar"></div>
+  <div class="category-section">
+    <h2>Новости дня</h2>
+    <div id="daily-news"></div>
+  </div>
+  <div class="subscribe-form">
+    <input type="email" id="email" placeholder="Введите ваш email"> 
+    <button onclick="subscribe()">Подписаться</button>
+    Поддержка: shalmiev234@gmail.com
+  </div>
+  <!-- Элемент для отображения даты и времени -->
+<div id="current-time" class="current-time"></div>
